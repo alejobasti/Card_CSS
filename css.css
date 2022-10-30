@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root {
+  --blue: #72F2EB;
+  --gray: #747F7F;
+  --green: #00CCC0;
+  --dark-green: #1B7F79;
+  --orange: #FF4858;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(to top, #72F2EB, #747F7F,#FF4858, #00CCC0, #1B7F79);
+  background-image: linear-gradient(to right top, #ff4858, #c47213, #7e851f, #3f8753, #1b7f79);
+  margin: 0;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+  height: 100vh;
+  
+}
+
+.card-one {
+  background: var(--blue);
+  grid-column: 1 / 2;
+  grid-row: 5 / 10;
+}
+.card-two {
+  background: var(--dark-green);
+  grid-column: 1 / 4;
+  grid-row: 7 / 9;
+  opacity: 75%;
+}
+.card-three {
+  background: var(--green);
+  grid-column: 5 / 8;
+  grid-row: 6 / 11;
+}
+.card-four {
+  border: 4px solid var(--orange);
+  grid-column: 6 / 9;
+  grid-row: 5 / 8;
+}
+.card-five {
+  border: 4px solid var(--orange);
+  grid-column: 7 / 10;
+  grid-row: 3 / 9;
+}
+.card-six {
+  border: 4px solid var(--orange);
+  background-color: var(--blue);
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+.card-seven {
+  font-size: 50px;
+  grid-column: 6 / 9;
+  grid-row: 3 / 5;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.card-seven p {
+  margin: 0;
+}
+.card-eight {
+  font-size: 30px;
+  grid-column-start: 4;
+  grid-row: 2 / 4;
+  display: grid;
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  justify-items: center;
+  align-items: center;
+}
+.circles:hover .circle {
+transform: translateX(200px);
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.one {
+  background: thistle;
+  transition: transform 1s linear;
+  transition-delay: 0.5s;
+  text-align: center;
+  font-size: 30px;
+  
+}
+.two {
+  background: lavender;
+  transition: transform 1s ease;
+  transition-delay: 1s;
+  text-align: center;
+  font-size: 30px;
+}
+.three {
+  background: plum;
+  transition: transform 1s ease-in;
+  transition-delay: 0.5s;
+  text-align: center;
+  font-size: 30px;
+}
+.four {
+  background: violet;
+  transition: transform 1s ease-out;
+  transition-delay: 0.5s;
+  text-align: center;
+  font-size: 30px;
+}
+.five {
+  background:rgb(236, 181, 235) ;
+  transition: transform 1s cubic-bezier(.46,.63,.85,.37);
+  transition-delay: 1s;
+  text-align: center;
+  font-size: 30px;
+}
